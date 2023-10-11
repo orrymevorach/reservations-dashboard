@@ -13,7 +13,7 @@ const useLoginExistingUserOnPageLoad = () => {
     const userRecordCookie = Cookies.get(COOKIES.USER_RECORD);
     if (userRecordCookie) {
       router.push({
-        pathname: ROUTES.CABIN_SELECTION,
+        pathname: ROUTES.DASHBOARD,
       });
     }
   }, [router]);
@@ -47,9 +47,7 @@ export default function Login() {
       user?.id && user?.password === password;
     if (userExistsAndPasswordMatches) {
       Cookies.set(COOKIES.USER_RECORD, user.id);
-      const hasCabin = user.cabin && user.cabin[0];
-      if (hasCabin) router.push(ROUTES.SUMMARY);
-      else router.push(ROUTES.CABIN_SELECTION);
+      router.push(ROUTES.DASHBOARD);
       return;
     } else if (passwordDoesNotMatch) {
       setIsLoading(false);

@@ -1,23 +1,23 @@
-@use '@variables' as variables;
-
-@mixin fontPrimaryLight {
-  font-family: 'Neue Haas Light', 'Arial', sans-serif;
-}
+// @use '@variables' as variables;
 
 @mixin fontPrimary {
-  font-family: 'Neue Haas Regular', 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
+}
+
+@mixin fontPrimaryLight {
+  font-family: 'Arial', sans-serif;
 }
 
 @mixin fontPrimaryMedium {
-  font-family: 'Neue Haas Medium', 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 @mixin fontPrimaryBold {
-  font-family: 'Neue Haas Bold', 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 @mixin fontPrimaryHeavy {
-  font-family: 'Neue Haas Heavy', 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 @mixin fontSecondary {
